@@ -14,10 +14,10 @@
         android:theme="@style/Theme.GamesApi"
         tools:targetApi="31">
         <activity
-            android:name=".searchList"
+            android:name=".searchUnity"
             android:exported="false" />
         <activity
-            android:name=".searchUnity"
+            android:name=".searchList"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@color/black02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageViewPoster"
+                android:layout_width="176dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitXY"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/gameYearTextView"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/gameNameTextView"
+                app:layout_constraintTop_toBottomOf="@+id/gameNameTextView" />
+
+            <TextView
+                android:id="@+id/gameRatingTextView"
+                android:layout_width="22dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="144dp"
+                android:background="@color/teal_700"
+                android:padding="2dp"
+                android:text="5.00"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageViewPoster"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPoster"
+                app:layout_constraintVertical_bias="0.05" />
+
+            <TextView
+                android:id="@+id/gameNameTextView"
+                android:layout_width="177dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewPoster"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageViewPoster"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPoster" />
+
+            <TextView
+                android:id="@+id/gameGenderTextView3"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/gameYearTextView"
+                app:layout_constraintTop_toBottomOf="@+id/gameYearTextView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
